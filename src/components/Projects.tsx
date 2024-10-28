@@ -6,8 +6,8 @@ const projects = [
     description: 'A recipe search app that contains the nutritional value of ingredients in any recipe.',
     image: 'https://img.reintech.io/variants/z9hhw71iyzgbcx78p33ojs2wbb36/3f0c9f12ddc5138b80eee8ca29a3fbea5cd81e79050a059d8d9f8ee1585da977',
     tags: ['React', 'Node.js', 'TailwindCSS', 'Edamam API'],
-    githubLink: 'https://github.com/avantika2195/Khana-Khazana',
-    liveDemoLink: 'https://khana-khazana-demo.com',
+    githubLink: 'https://github.com/avantika2195/Khana-Khazana.git',
+    liveDemoLink: 'https://khana-khazana-psi-six.vercel.app/',
   },
   {
     title: 'Task Management App',
