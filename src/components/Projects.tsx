@@ -7,6 +7,7 @@ const projects = [
     image: 'https://img.reintech.io/variants/z9hhw71iyzgbcx78p33ojs2wbb36/3f0c9f12ddc5138b80eee8ca29a3fbea5cd81e79050a059d8d9f8ee1585da977',
     tags: ['React', 'Node.js', 'TailwindCSS', 'Edamam API'],
     githubLink: 'https://github.com/avantika2195/Khana-Khazana',
+    liveDemoLink: 'https://khana-khazana-demo.com', // Add live demo link
   },
   {
     title: 'Task Management App',
@@ -14,6 +15,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
     tags: ['TypeScript', 'Angular', 'CSS'],
     githubLink: 'https://github.com/avantika2195/Task-Manager',
+    liveDemoLink: 'https://task-manager-demo.com', // Add live demo link
   },
   {
     title: 'Portfolio Website',
@@ -21,20 +23,23 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
     tags: ['React', 'Tailwind CSS'],
     githubLink: 'https://github.com/your-username/portfolio-website',
+    liveDemoLink: 'https://portfolio-website-demo.com', // Add live demo link
   },
   {
-    title: 'Companion-A blog website',
+    title: 'Companion - A blog website',
     description: 'A UI blogging website to share your thoughts on.',
     image: 'https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png',
     tags: ['JavaScript', 'HTML', 'CSS'],
     githubLink: 'https://github.com/avantika2195/Companion-a-blog-web',
+    liveDemoLink: 'https://companion-blog-demo.com', // Add live demo link
   },
   {
     title: 'FoodCourt',
-    description: 'A real time UI for food dilevery app to deliver food at or location.',
+    description: 'A real-time UI for a food delivery app to deliver food at your location.',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJcnjXcE7lSSS3J9L7V-uA6kK1gGywjoNTw&s',
     tags: ['Tailwind', 'React'],
     githubLink: 'https://github.com/avantika2195/FoodCourt',
+    liveDemoLink: 'https://foodcourt-demo.com', // Add live demo link
   },
 ];
 
@@ -64,6 +69,7 @@ export default function Projects() {
         <div className="flex justify-between items-center">
           <button
             onClick={handlePrev}
+            aria-label="Previous projects"
             className="text-gray-600 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
           >
             &larr;
@@ -71,7 +77,7 @@ export default function Projects() {
 
           <div className="grid md:grid-cols-3 gap-8 w-full">
             {visibleProjects.map((project) => (
-              <div key={project.title} className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+              <div key={project.title} className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 dark:text-white">{project.title}</h3>
@@ -83,14 +89,24 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    View on GitHub
-                  </a>
+                  <div className="flex space-x-4 mt-2">
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                    >
+                      View on GitHub
+                    </a>
+                    <a
+                      href={project.liveDemoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -98,6 +114,7 @@ export default function Projects() {
 
           <button
             onClick={handleNext}
+            aria-label="Next projects"
             className="text-gray-600 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
           >
             &rarr;
