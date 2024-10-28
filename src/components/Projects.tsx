@@ -7,7 +7,7 @@ const projects = [
     image: 'https://img.reintech.io/variants/z9hhw71iyzgbcx78p33ojs2wbb36/3f0c9f12ddc5138b80eee8ca29a3fbea5cd81e79050a059d8d9f8ee1585da977',
     tags: ['React', 'Node.js', 'TailwindCSS', 'Edamam API'],
     githubLink: 'https://github.com/avantika2195/Khana-Khazana',
-    liveDemoLink: 'https://khana-khazana-demo.com', // Add live demo link
+    liveDemoLink: 'https://khana-khazana-demo.com',
   },
   {
     title: 'Task Management App',
@@ -15,7 +15,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
     tags: ['TypeScript', 'Angular', 'CSS'],
     githubLink: 'https://github.com/avantika2195/Task-Manager',
-    liveDemoLink: 'https://task-manager-srivastavaavantika465-gmailcoms-projects.vercel.app/login', // Add live demo link
+    liveDemoLink: 'https://task-manager-srivastavaavantika465-gmailcoms-projects.vercel.app/login',
   },
   {
     title: 'Portfolio Website',
@@ -23,7 +23,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
     tags: ['React', 'Tailwind CSS'],
     githubLink: 'https://github.com/your-username/portfolio-website',
-    liveDemoLink: 'https://portfolio-website-yd2e.vercel.app/', // Add live demo link
+    liveDemoLink: 'https://portfolio-website-yd2e.vercel.app/',
   },
   {
     title: 'Companion - A blog website',
@@ -31,7 +31,7 @@ const projects = [
     image: 'https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png',
     tags: ['JavaScript', 'HTML', 'CSS'],
     githubLink: 'https://github.com/avantika2195/Companion-a-blog-web',
-    liveDemoLink: 'https://companion-blog-demo.com', // Add live demo link
+    liveDemoLink: 'https://companion-blog-demo.com',
   },
   {
     title: 'FoodCourt',
@@ -39,7 +39,7 @@ const projects = [
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJcnjXcE7lSSS3J9L7V-uA6kK1gGywjoNTw&s',
     tags: ['Tailwind', 'React'],
     githubLink: 'https://github.com/avantika2195/FoodCourt',
-    liveDemoLink: 'https://foodcourt-demo.com', // Add live demo link
+    liveDemoLink: 'https://foodcourt-demo.com',
   },
 ];
 
@@ -124,3 +124,4 @@ export default function Projects() {
     </section>
   );
 }
+
