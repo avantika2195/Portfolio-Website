@@ -15,7 +15,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
     tags: ['TypeScript', 'Angular', 'CSS'],
     githubLink: 'https://github.com/avantika2195/Task-Manager',
-    liveDemoLink: 'https://task-manager-demo.com', // Add live demo link
+    liveDemoLink: 'https://task-manager-srivastavaavantika465-gmailcoms-projects.vercel.app/login', // Add live demo link
   },
   {
     title: 'Portfolio Website',
@@ -23,7 +23,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
     tags: ['React', 'Tailwind CSS'],
     githubLink: 'https://github.com/your-username/portfolio-website',
-    liveDemoLink: 'https://portfolio-website-demo.com', // Add live demo link
+    liveDemoLink: 'https://portfolio-website-yd2e.vercel.app/', // Add live demo link
   },
   {
     title: 'Companion - A blog website',
