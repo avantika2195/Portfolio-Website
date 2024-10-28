@@ -22,7 +22,7 @@ const projects = [
     description: 'A beautiful portfolio website built with React and Tailwind CSS.',
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
     tags: ['React', 'Tailwind CSS'],
-    githubLink: 'https://github.com/your-username/portfolio-website',
+    githubLink: 'https://github.com/avantika2195/Portfolio-Website',
     liveDemoLink: 'https://portfolio-website-yd2e.vercel.app/',
   },
   {
