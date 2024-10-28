@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist" // Make sure this line is correct for gh-pages, but you won't need it for Vercel
+ 
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
