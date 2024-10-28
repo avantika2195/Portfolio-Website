@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "vercel --prod"  // Add your Vercel deploy command here
+    "deploy": "vercel --prod"  
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
