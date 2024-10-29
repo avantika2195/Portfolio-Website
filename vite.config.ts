@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@emailjs/browser'], // Make sure to externalize the module
+      external: ['@emailjs/browser', 'react-hot-toast'],
     },
   },
 });
+
