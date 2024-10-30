@@ -23,8 +23,8 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        'service_6t19ysq', // Replace with your EmailJS service ID
-        'template_68iieif', // Replace with your EmailJS template ID
+        'service_j0q0mpi', // Replace with your EmailJS service ID
+        'template_jdcm9h6', // Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
