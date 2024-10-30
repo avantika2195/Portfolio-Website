@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const roles = [
   'Frontend Developer',
   'UI Designer',
-  'MEAN Stack Developer'
+  'MERN Stack Developer'
 ];
 
 const skills = [
