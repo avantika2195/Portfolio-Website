@@ -8,11 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-<<<<<<< HEAD
+
     "deploy": "vercel --prod"
-=======
+
     "deploy": "vercel --prod" 
->>>>>>> origin/main
+
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
