@@ -23,26 +23,25 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        'service_j0q0mpi', // Replace with your EmailJS service ID
-        'template_jdcm9h6', // Replace with your EmailJS template ID
+        'service_6t19ysq',
+        'template_68iieif',
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: 'Avantika', // Your name
+          to_name: 'Avantika',
           to_email: 'srivastavaavantika465@gmail.com',
         },
-        'mvrodn-j7CWRs20on' // Replace with your EmailJS public key
+        'mvrodn-j7CWRs20on'
       );
 
       toast.success('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      // Enhanced error handling
-      if (error.response) {
-        toast.error(`Failed to send message: ${error.response.data.message}`);
+      if (error instanceof Error) {
+        toast.error(error.message || 'Failed to send message. Please try again.');
       } else {
-        toast.error('Failed to send message. Please try again.');
+        toast.error('An unknown error occurred.');
       }
       console.error('Email error:', error);
     } finally {
@@ -53,7 +52,7 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     }));
   };
 
