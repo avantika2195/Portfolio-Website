@@ -1,8 +1,5 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
 export default defineConfig({
-
+  base: '/', // This will serve the app from the root of the domain
   plugins: [react()],
   optimizeDeps: {
     include: ["@emailjs/browser", "react-hot-toast"], // Pre-bundle dependencies
