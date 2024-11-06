@@ -2,19 +2,19 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/your-repo-name/', // Update with your actual repo name if needed
   plugins: [react()],
   optimizeDeps: {
-    include: ["@emailjs/browser", "react-hot-toast"]
+    include: ["@emailjs/browser", "react-hot-toast"], // Pre-bundle dependencies
   },
   resolve: {
     alias: {
-      '@': '/src'
-    }
+      '@': '/src', // Alias for '/src' directory
+    },
   },
   build: {
     rollupOptions: {
-      external: ['@emailjs/browser', 'react-hot-toast']
-    }
-  }
+      external: ['@emailjs/browser', 'react-hot-toast'], // Exclude these from the bundle
+    },
+  },
 });
-
